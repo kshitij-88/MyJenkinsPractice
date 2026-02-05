@@ -11,7 +11,7 @@ import io.cucumber.java.en.Then;
 public class Guru99StepsDefination extends BaseClass {
 	@Given("user is on registration page")
 	public void user_is_on_registration_page() {
-		BaseClass.initlialization("chrome");
+		BaseClass.initlialization(System.getProperty("Browser"));
 	}
 
 	@Then("user register new user by reading test data from {string} and {int}")
